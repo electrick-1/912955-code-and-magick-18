@@ -78,6 +78,7 @@ var setupFireball = setup.querySelector('.setup-fireball-wrap');
 
 var openPopup = function () {
   setup.classList.remove('hidden');
+  setup.removeAttribute('style');
 };
 
 var closePopup = function () {
