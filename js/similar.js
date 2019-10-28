@@ -39,12 +39,12 @@
 
   window.wizard.onEyesChange = function (color) {
     eyesColor = color;
-    updateWizards();
+    window.debounce(updateWizards);
   };
 
   window.wizard.onCoatChange = function (color) {
     coatColor = color;
-    updateWizards();
+    window.debounce(updateWizards);
   };
 
   var successHandler = function (data) {
