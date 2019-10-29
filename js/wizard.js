@@ -34,14 +34,14 @@
     var newColor = SETUP_WIZARD.coatColor[window.util.generateRandomNumber(0, SETUP_WIZARD.coatColor.length - 1)];
     wizardCoat.style.fill = newColor;
     setupWizard.querySelector('input[name="coat-color"]').value = newColor;
-    wizard.onCoatChange(newColor);
+    window.wizard.onCoatChange(newColor);
   });
 
   wizardEyes.addEventListener('click', function () {
     var newColor = SETUP_WIZARD.eyesColor[window.util.generateRandomNumber(0, SETUP_WIZARD.eyesColor.length - 1)];
     wizardEyes.style.fill = newColor;
     setupWizard.querySelector('input[name="eyes-color"]').value = newColor;
-    wizard.onEyesChange(newColor);
+    window.wizard.onEyesChange(newColor);
   });
 
   setupFireball.addEventListener('click', function () {
